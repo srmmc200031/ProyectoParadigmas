@@ -1,0 +1,148 @@
+ffmpeg version 2021-09-22-git-447cf53774-essentials_build-www.gyan.dev Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10.3.0 (Rev5, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-libass --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      57.  6.100 / 57.  6.100
+  libavcodec     59.  9.100 / 59.  9.100
+  libavformat    59.  5.100 / 59.  5.100
+  libavdevice    59.  0.101 / 59.  0.101
+  libavfilter     8.  9.100 /  8.  9.100
+  libswscale      6.  1.100 /  6.  1.100
+  libswresample   4.  0.100 /  4.  0.100
+  libpostproc    56.  0.100 / 56.  0.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/USER/AppData/Local/Temp/KritaFFmpegProgress.FIMWyd'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '8'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/frame%04d.png'.
+Reading option '-i' ... matched as input url with argument 'C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/palette.png'.
+Reading option '-lavfi' ... matched as option 'lavfi' (create a complex filtergraph) with argument 'scale=w=242:h=136[0:v];[0:v][1:v] paletteuse'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/walk.gif' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/USER/AppData/Local/Temp/KritaFFmpegProgress.FIMWyd.
+[file @ 0000016f67d0d600] Setting default whitelist 'file,crypto,data'
+Applying option lavfi (create a complex filtergraph) with argument scale=w=242:h=136[0:v];[0:v][1:v] paletteuse.
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 8.
+Successfully parsed a group of options.
+Opening an input file: C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/frame%04d.png.
+[image2 @ 0000016f67d4dc80] Opening 'C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/frame0000.png' for reading
+[file @ 0000016f67d50e00] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000016f67d59000] Statistics: 3005 bytes read, 0 seeks
+[image2 @ 0000016f67d4dc80] Opening 'C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/frame0001.png' for reading
+[file @ 0000016f67d50ec0] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000016f67d51040] Statistics: 2657 bytes read, 0 seeks
+[image2 @ 0000016f67d4dc80] Opening 'C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/frame0002.png' for reading
+[file @ 0000016f67d50f80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000016f67d51d80] Statistics: 2838 bytes read, 0 seeks
+[image2 @ 0000016f67d4dc80] Opening 'C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/frame0003.png' for reading
+[file @ 0000016f67d50f80] Setting default whitelist 'file,crypto,data'
+[AVIOContext @ 0000016f67d52b00] Statistics: 2657 bytes read, 0 seeks
+Input #0, image2, from 'C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/frame%04d.png':
+  Duration: 00:00:00.16, start: 0.000000, bitrate: N/A
+  Stream #0:0, 4, 1/25: Video: png, 1 reference frame, rgba(pc), 240x135 [SAR 11811:11811 DAR 16:9], 0/1, 25 fps, 25 tbr, 25 tbn
+Successfully opened the file.
+Parsing a group of options: input url C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/palette.png.
+Successfully parsed a group of options.
+Opening an input file: C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/palette.png.
+[NULL @ 0000016f67d58a80] Opening 'C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/palette.png' for reading
+[file @ 0000016f67d0d300] Setting default whitelist 'file,crypto,data'
+[png_pipe @ 0000016f67d58a80] Format png_pipe probed with size=2048 and score=99
+[png_pipe @ 0000016f67d58a80] Before avformat_find_stream_info() pos: 0 bytes read:142 seeks:0 nb_streams:1
+[png_pipe @ 0000016f67d58a80] After avformat_find_stream_info() pos: 142 bytes read:142 seeks:0 frames:1
+Input #1, png_pipe, from 'C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/palette.png':
+  Duration: N/A, bitrate: N/A
+  Stream #1:0, 1, 1/25: Video: png, 1 reference frame, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 0/1, 25 fps, 25 tbr, 25 tbn
+Successfully opened the file.
+[Parsed_scale_0 @ 0000016f67d50cc0] Setting 'w' to value '242'
+[Parsed_scale_0 @ 0000016f67d50cc0] Setting 'h' to value '136'
+[Parsed_scale_0 @ 0000016f67d50cc0] w:242 h:136 flags:'' interl:0
+Parsing a group of options: output url C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/walk.gif.
+Successfully parsed a group of options.
+Opening an output file: C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/walk.gif.
+[file @ 0000016f67d50d00] Setting default whitelist 'file,crypto,data'
+Successfully opened the file.
+detected 8 logical cores
+Stream mapping:
+  Stream #0:0 (png) -> scale
+  Stream #1:0 (png) -> paletteuse:palette
+  paletteuse -> Stream #0:0 (gif)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 8 times
+[Parsed_scale_0 @ 0000016f67d74c00] Setting 'w' to value '242'
+[Parsed_scale_0 @ 0000016f67d74c00] Setting 'h' to value '136'
+[Parsed_scale_0 @ 0000016f67d74c00] w:242 h:136 flags:'' interl:0
+[graph 0 input from stream 0:0 @ 0000016f67d74e00] Setting 'video_size' to value '240x135'
+[graph 0 input from stream 0:0 @ 0000016f67d74e00] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 0:0 @ 0000016f67d74e00] Setting 'time_base' to value '1/8'
+[graph 0 input from stream 0:0 @ 0000016f67d74e00] Setting 'pixel_aspect' to value '11811/11811'
+[graph 0 input from stream 0:0 @ 0000016f67d74e00] Setting 'frame_rate' to value '8/1'
+[graph 0 input from stream 0:0 @ 0000016f67d74e00] w:240 h:135 pixfmt:rgba tb:1/8 fr:8/1 sar:11811/11811
+[graph 0 input from stream 1:0 @ 0000016f67d75e00] Setting 'video_size' to value '16x16'
+[graph 0 input from stream 1:0 @ 0000016f67d75e00] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 1:0 @ 0000016f67d75e00] Setting 'time_base' to value '1/25'
+[graph 0 input from stream 1:0 @ 0000016f67d75e00] Setting 'pixel_aspect' to value '1/1'
+[graph 0 input from stream 1:0 @ 0000016f67d75e00] Setting 'frame_rate' to value '25/1'
+[graph 0 input from stream 1:0 @ 0000016f67d75e00] w:16 h:16 pixfmt:rgba tb:1/25 fr:25/1 sar:1/1
+[format @ 0000016f67d74600] Setting 'pix_fmts' to value 'rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8'
+[auto_scale_0 @ 0000016f67d75900] w:iw h:ih flags:'' interl:0
+[Parsed_paletteuse_1 @ 0000016f67d74500] auto-inserting filter 'auto_scale_0' between the filter 'graph 0 input from stream 1:0' and the filter 'Parsed_paletteuse_1'
+[AVFilterGraph @ 0000016f67e50580] query_formats: 6 queried, 5 merged, 1 already done, 0 delayed
+[swscaler @ 0000016f67f0cd40] [swscaler @ 0000016f67f19d40] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f67f0cd40] [swscaler @ 0000016f67f37ac0] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f67f0cd40] [swscaler @ 0000016f67f57840] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f67f0cd40] [swscaler @ 0000016f67f76f40] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f67f0cd40] [swscaler @ 0000016f67f9ff40] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f67f0cd40] [swscaler @ 0000016f67fd00c0] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f67f0cd40] [swscaler @ 0000016f67fe6480] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f67f0cd40] [swscaler @ 0000016f68007f40] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f67f0cd40] [swscaler @ 0000016f6803df00] Forcing full internal H chroma due to input having non subsampled chroma
+[Parsed_scale_0 @ 0000016f67d74c00] w:240 h:135 fmt:rgba sar:11811/11811 -> w:242 h:136 fmt:bgra sar:1088/1089 flags:0x0
+[swscaler @ 0000016f6806b540] [swscaler @ 0000016f6807e540] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f6806b540] [swscaler @ 0000016f68091580] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f6806b540] [swscaler @ 0000016f680a4580] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f6806b540] [swscaler @ 0000016f680bb5c0] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f6806b540] [swscaler @ 0000016f680d3600] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f6806b540] [swscaler @ 0000016f680e6740] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f6806b540] [swscaler @ 0000016f680f9880] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f6806b540] [swscaler @ 0000016f6810ca00] Forcing full internal H chroma due to input having non subsampled chroma
+[swscaler @ 0000016f6806b540] [swscaler @ 0000016f6811fb40] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scale_0 @ 0000016f67d75900] w:16 h:16 fmt:rgba sar:1/1 -> w:16 h:16 fmt:bgra sar:1/1 flags:0x0
+[Parsed_paletteuse_1 @ 0000016f67d74500] [framesync @ 0000016f67e8b348] Selected 1/200 time base
+[Parsed_paletteuse_1 @ 0000016f67d74500] [framesync @ 0000016f67e8b348] Sync level 2
+Output #0, gif, to 'C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/walk.gif':
+  Metadata:
+    encoder         : Lavf59.5.100
+  Stream #0:0, 0, 1/100: Video: gif, 1 reference frame, pal8(pc, gbr/unknown/unknown, progressive), 242x136 (0x0) [SAR 1088:1089 DAR 16:9], 0/1, q=2-31, 200 kb/s, 8 fps, 100 tbn (default)
+    Metadata:
+      encoder         : Lavc59.9.100 gif
+Clipping frame in rate conversion by 0.000008
+[gif @ 0000016f67e520c0] 59x106 image at pos (94;20) [area:242x136]
+frame=    1 fps=0.0 q=-0.0 size=       0kB time=00:00:00.01 bitrate=   0.0kbits/s speed=0.425x    [gif @ 0000016f67e520c0] 37x106 image at pos (102;20) [area:242x136]
+[gif @ 0000016f67e520c0] 54x106 image at pos (100;20) [area:242x136]
+[gif @ 0000016f67e520c0] 37x106 image at pos (102;20) [area:242x136]
+[Parsed_paletteuse_1 @ 0000016f67d74500] [framesync @ 0000016f67e8b348] Sync level 0
+[out_0_0 @ 0000016f67d75700] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+frame=    4 fps=0.0 q=-0.0 Lsize=       5kB time=00:00:00.39 bitrate=  97.0kbits/s speed=9.71x    
+[AVIOContext @ 0000016f67d4d840] Statistics: 0 seeks, 2 writeouts
+video:5kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.424538%
+Input file #0 (C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/frame%04d.png):
+  Input stream #0:0 (video): 4 packets read (11157 bytes); 4 frames decoded; 
+  Total: 4 packets (11157 bytes) demuxed
+Input file #1 (C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/palette.png):
+  Input stream #1:0 (video): 1 packets read (142 bytes); 1 frames decoded; 
+  Total: 1 packets (142 bytes) demuxed
+Output file #0 (C:/Users/USER/Desktop/Dibujines/Game Jam Shit/Sprites/Walk/walk.gif):
+  Output stream #0:0 (video): 4 frames encoded; 4 packets muxed (4711 bytes); 
+  Total: 4 packets (4711 bytes) muxed
+5 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 0000016f67e52d00] Statistics: 0 seeks, 1 writeouts
+[AVIOContext @ 0000016f67d58d40] Statistics: 142 bytes read, 0 seeks

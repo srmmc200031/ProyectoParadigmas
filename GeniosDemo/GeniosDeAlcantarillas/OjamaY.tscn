@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sprites/ojamayellow.png" type="Texture" id=1]
+
+[node name="Area2D" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 26.9845, -32.6077 )
+polygon = PoolVector2Array( 1.78088, -22.7281, -6.56239, -13.5903, -8.01916, -5.6443, -6.95969, 1.63951, -12.6543, 5.74493, -19.4084, 7.73142, -22.9841, 11.9693, -23.5138, 17.7963, -22.1895, 20.3125, -18.8787, 21.6369, -13.9786, 23.2261, -14.2435, 31.9666, 17.0107, 31.5693, 16.4809, 13.6909, 25.8837, -4.05511, 24.9566, -13.0605, 30.5188, -20.8741, 25.2215, -29.4822, 15.6863, -31.3363, 4.6944, -33.5876 )
+
+[node name="ojamayellow" type="Sprite" parent="."]
+position = Vector2( 0.61549, 8.78758 )
+scale = Vector2( 0.0865943, 0.0746345 )
+texture = ExtResource( 1 )
+flip_h = true
