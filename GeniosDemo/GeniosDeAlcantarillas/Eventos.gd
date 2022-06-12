@@ -9,7 +9,8 @@ func _play_animation(body):
 	$Triggers.disconnect("body_entered", self, "_play_animation")
 
 
-
+#Se codean los eventos de cada una de las cajas
+#*valores antiguos de prueba
 
 func _on_Triggers_area_entered(area):
 	$Triggers/Label.percent_visible=0

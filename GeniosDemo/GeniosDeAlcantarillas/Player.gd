@@ -1,5 +1,8 @@
+#La clase se extiende de la clase KinematicBody2D, el tipo de objeto q es 
+#el jugador
 extends KinematicBody2D
 
+#Se inician variables
 var direcc:int=1
 var up=Vector2(0,-1)
 var speed:int=300
@@ -14,9 +17,11 @@ var knockback = 2000#Number was arbitrary
 var tiempo:int=0
 var Tmax:int=1
 
+#Se inicializa la gravedad enlazada al jugador
 func _ready():
 	gravity=(-2*MAX_JUMP_HEIGHT)/jump_duration
 
+#Se crean los controles, movimiento a la izquierda, derecha
 func _physics_process(delta):
 	if (is_on_floor()==true && speed!=300) || speed==300:
 		if Input.is_action_pressed("move_left"):
@@ -47,7 +52,7 @@ func _physics_process(delta):
 #	vel=(direcc * speed * (speed+150)) + knockback
 	vel=move_and_slide(vel,Vector2.UP)
 	vel.y+=gravity*delta
-
+#Se codifica el salto del jugador
 	if is_on_floor():
 		jumps_left=1
 	
@@ -60,7 +65,8 @@ func _physics_process(delta):
 		jumps_left -= 1
 	if is_on_floor() and doublejump!=0:
 		doublejump=0
-
+#Se codifican un espacio alrededor del jugador para poder interactuar con 
+#el escenario
 func _on_HurtBox_area_entered(area):
 	if "enemy" in area.name:
 		if self.body.direction == -1.0:

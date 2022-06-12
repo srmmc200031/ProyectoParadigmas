@@ -1,3 +1,4 @@
+#Se inician valores
 extends KinematicBody2D
 signal hit 
 export var speed = 250

@@ -1,5 +1,6 @@
+#Se llama la clase default de control
 extends Control
-
+#Se codifican los efectos de la pantalla de titulo
 func _ready():
 	transition()
 
@@ -18,25 +19,17 @@ func transexit():
 func creditosabierto():
 	$AnimationPlayer.play("FadeCreditos")
 	
+#Se codea la transisión al pulsar el boton "Start"
 func _on_TextureButton2_pressed(): #Start
 	$click.play()
 	transgame()
-
-
-func _on_TextureButton_pressed(): #Credits
-	$click.play()
-	creditosabierto()
-#	parra()
-	get_node("Creditos").visible = true
-	 # Replace with function body.
-
-
+#Se codea la salida del sistema al pulsar "Quit"
 func _on_TextureButton3_pressed(): #Quit
 	$click.play()
 	transexit()
 	pass # Replace with function body.
 
-
+#Se codifica el cambio de escena al empezar el juego, yendo al nivel
 func _on_AnimationPlayer_animation_finished(anim_name):
 	if anim_name == "fadeblack":
 		get_tree().change_scene("res://MainScene.tscn")
@@ -48,28 +41,11 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 		parra()
 	pass # Replace with function body.
 
-
-func _on_CerrarCreditos_pressed():
-	$click.play()
-	get_node("Creditos").visible = false
-	pass # Replace with function body.
-
-
+#Se codifican los sonidos de los cuadros de opciones
 func _on_TextureButton2_mouse_entered():
 	$cursor.play()
 	pass # Replace with function body.
 
-
-func _on_TextureButton_mouse_entered():
-	$cursor.play()
-	pass # Replace with function body.
-
-
 func _on_TextureButton3_mouse_entered():
-	$cursor.play()
-	pass # Replace with function body.
-
-
-func _on_CerrarCreditos_mouse_entered():
 	$cursor.play()
 	pass # Replace with function body.

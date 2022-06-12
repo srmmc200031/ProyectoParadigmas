@@ -10,18 +10,13 @@
 animations = [ {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
-"name": "Run",
-"speed": 9.0
-}, {
-"frames": [ ExtResource( 1 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 1 ) ],
-"loop": true,
 "name": "Walk",
 "speed": 8.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Run",
+"speed": 9.0
 }, {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
@@ -32,15 +27,21 @@ animations = [ {
 "loop": true,
 "name": "Hit",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 32, 32 )
+extents = Vector2( 32, 36 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 22.8571, 29.7414 )
+extents = Vector2( 31.5, 35 )
 
 [node name="Player" type="KinematicBody2D"]
+collision_layer = 9
 collision_mask = 2
 script = ExtResource( 2 )
 
@@ -49,15 +50,14 @@ frames = SubResource( 1 )
 animation = "Walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -9.53674e-07 )
+light_mask = 9
+position = Vector2( 0, -4 )
 shape = SubResource( 2 )
 
-[node name="HurtBox" type="Area2D" parent="."]
-collision_mask = 4
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
-position = Vector2( 1.43051e-06, -2.5 )
-scale = Vector2( 1.4, 1.16 )
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+visible = false
+light_mask = 9
+position = Vector2( 0.5, -4 )
 shape = SubResource( 3 )
 
 [node name="Run" type="AudioStreamPlayer" parent="."]
@@ -68,5 +68,3 @@ stream = ExtResource( 13 )
 
 [node name="Jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
-
-[connection signal="area_entered" from="HurtBox" to="." method="_on_HurtBox_area_entered"]
