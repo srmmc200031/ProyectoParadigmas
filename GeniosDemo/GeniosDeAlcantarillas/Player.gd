@@ -1,12 +1,12 @@
 #La clase se extiende de la clase KinematicBody2D, el tipo de objeto q es 
-#el jugador
+#el tipo de objeto del jugador
 extends KinematicBody2D
 
 #Se inician variables
 var direcc:int=1
 var up=Vector2(0,-1)
 var speed:int=300
-var jumpforce:int=505
+var jumpforce:int=650
 var gravity
 var jump_duration = 1.53
 const MAX_JUMP_HEIGHT = -1000
@@ -19,6 +19,7 @@ var Tmax:int=1
 
 #Se inicializa la gravedad enlazada al jugador
 func _ready():
+	add_to_group("player")
 	gravity=(-2*MAX_JUMP_HEIGHT)/jump_duration
 
 #Se crean los controles, movimiento a la izquierda, derecha

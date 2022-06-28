@@ -43,7 +43,7 @@ func _on_Triggers5_area_entered(area):
 	$AnimationPlayer.play("Texto5")
 	$CanvasModulate.visible=true
 #	Globals.camera.shake(300,300,300)
-#	test=test*-1
+	#test=test*-1
 	
 
 
